@@ -1,4 +1,4 @@
-# cs1302-demos
+# Variable Refresher Demo
 
 <hr/>
 
