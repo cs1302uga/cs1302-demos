@@ -1,4 +1,4 @@
-1. `FileNotFound.java`
+1. Demo notes for `FileNotFound.java`:
    1. Fill in `countTokens` method as a group. Emphasize the possible exceptions (`NullPointerException` and `FileNotFoundException`).
       Mention that one is checked and the other unchecked.
    1. Use empty catch statement for `FileNotFoundException` - show that the method returns 0 lines.
