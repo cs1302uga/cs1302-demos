@@ -31,7 +31,15 @@
    1. `Product p = new Product(10987);`
       1. Doesn't compile as `Product` is abstract.
       1. Point out that `Product` has a constructor even though it is abstract. May mention that it is called from `Tablet` and `Book`.
-
+   1. Create an array of type `Printable` of size 5. 
+      1. Draw the array and discuss that each index contains a reference (not an object).
+      1. Each index originally contains null.
+      1. Populate the array with various object types.
+      1. Write a for-each loop to call the `print` method on each object. Ask them if the output will look similar for every object.
+   1. Write a method that returns a `Printable` reference.
+      1. Ask what we can return from the method.
+      1. Ask what we can do with the return value from the calling method.
+      1. The body of the method would instantiate and return an object of a class that implements `Printable`.
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
