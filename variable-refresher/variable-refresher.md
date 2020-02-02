@@ -30,7 +30,7 @@
       1. Doesn't compile. `Tablet` is a subclass of `Product`.
    1. `Product p = new Product(10987);`
       1. Doesn't compile as `Product` is abstract.
-      1. Point out that `Product` has a constructor even though it is abstract.` May mention that it is called from `Tablet` and `Book`.
+      1. Point out that `Product` has a constructor even though it is abstract. May mention that it is called from `Tablet` and `Book`.
 
 <hr/>
 
