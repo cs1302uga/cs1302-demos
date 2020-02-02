@@ -1,5 +1,8 @@
 # Variable Refresher Demo
 
+1. Not related to the demo, but I will start out with a 5 minute discussion about project 2. Just a few general statements 
+   about getting started and following the checklist.
+
 1. Show the `variable-refresher-uml.png` UML diagram. Ask a few questions about it:
    1. Which classes are abstract?
    1. Does `Animal` inherit the `print` method? 
@@ -17,12 +20,17 @@
       1. Remind them: the reference determines what you can do. The object determines how it is done.
    1. `Animal a = new Animal(20);`
       1. Doesn't compile - abstract.
+   1. `Animal a = new Tablet(1400, 5000);`
+      1. Doesn't compile. `Tablet is not a parent of `Animal`.
+   1. `Animal a = new Kangaroo("Joey", 72.1, 8);`
+      1. Ask if the line of code will compile.
+      1. Draw out the diagram similar to the tutorial. Ask how many instance variables the object has.
+      1. What methods can we call? Have them explain.
    1. `Tablet t = new Product(10987);`
       1. Doesn't compile. `Tablet` is a subclass of `Product`.
    1. `Product p = new Product(10987);`
       1. Doesn't compile as `Product` is abstract.
       1. Point out that `Product` has a constructor even though it is abstract.` May mention that it is called from `Tablet` and `Book`.
-   1. 
 
 <hr/>
 
