@@ -1,7 +1,8 @@
 package cs1302.models;
 
 /**
- * Describe class {@code Product} here.
+ * A basic class representing a product. Each {@code Product} object
+ * has an ID number and methods to modify and retrieve the ID.
  *
  * @author <a href="mailto:mec@nike.cs.uga.edu">Michael Cotterell</a>
  * @version 1.0

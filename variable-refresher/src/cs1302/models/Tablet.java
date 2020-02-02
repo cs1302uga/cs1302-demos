@@ -1,7 +1,8 @@
 package cs1302.models;
 
 /**
- * Describe class {@code Tablet} here.
+ * A class representing electronic tablets. Each {@code Tablet} object
+ * has an associated {@code resolution}.
  */
 public class Tablet extends Product {
 

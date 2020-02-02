@@ -1,7 +1,8 @@
 package cs1302.models;
 
 /**
- * Describe class {@code Kangaroo} here.
+ * A class representing kangaroos. Each {@code Kangaroo} object
+ * has a {@code name} and a {@code pouchSize}.
  */
 public class Kangaroo extends Animal {
 

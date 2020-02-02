@@ -1,7 +1,7 @@
 package cs1302.models;
 
 /**
- * Describe interface {@code Printable} here.
+ * An interface for classes that can be printed.
  */
 public interface Printable {
 

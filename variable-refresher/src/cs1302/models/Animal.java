@@ -1,7 +1,8 @@
 package cs1302.models;
 
 /**
- * Describe class {@code Animal} here.
+ * A basic class representing animals. Each {@code Animal} object
+ * has an {@code age} and methods to set and retrieve the age.
  */
 public abstract class Animal implements Printable {
 

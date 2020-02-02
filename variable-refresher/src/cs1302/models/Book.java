@@ -1,7 +1,8 @@
 package cs1302.models;
 
 /**
- * Describe class {@code Book} here.
+ * A class representing books. Each {@code Book} object
+ * has an associated {@code title}.
  */
 public class Book extends Product {
 
