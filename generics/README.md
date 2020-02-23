@@ -35,6 +35,10 @@
       rawContainer.set("Hello");
    } // foo
    ```
+   
+   ```
+   unchecked call to set(T) as a member of the raw type Container
+   ```
 
 1. Declare a `Container<String>` object and assign a proper reference.
    Call get and ask them what type it returns. Is it legal to assign
