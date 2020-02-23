@@ -13,6 +13,7 @@
 1. Quickly create and compile `Container` class. 
    See [`Container.java`](src/cs1302/generics/Container.java) for hints.
    To illustrate some warnings:
+   * leave `<T>` on the constructors [<identifier> expected];
    * leave the `next` instance variable as a raw type [unchecked conversion warning]; and maybe
    * leave the `getNext()` return type as a raw type [no warning]. 
    
