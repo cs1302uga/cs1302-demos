@@ -24,7 +24,7 @@ public class Driver {
      * up of four {@code ObjectContainer} objects, each containing
      * a single {@code String}.
      *
-     * @return a reference to the head of the {@code Container}
+     * @return a reference to the head of the {@code ObjectContainer}
      * list.
      */
     private static ObjectContainer createStringList() {
