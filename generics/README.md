@@ -10,8 +10,15 @@
    $ curl -s -L https://git.io/Jv0QP | bash
    ```
    
-1. Create generic driver from `ObjectContainer` making sure to leave
-   the `next` instance variable as a raw type. This whole process
+1. Quickly create and compile `Container` class. 
+   See [`Container.java`](src/cs1302/generics/Container.java) for hints.
+   To illustrate some errors and warnings:
+   * leave the `next` instance variable as a raw type; and maybe
+   * leave the `getNext()` return type as a raw type. 
+   This whole process shouldn't be much more than a few replace string commands.
+   
+1. Update and demo the driver using a fixed `Container` class.
+   This whole process
    shouldn't be much more than a few replace string commands.
 
 1. Write the method below and ask them what's wrong with it. Discuss
