@@ -11,8 +11,9 @@ if [ ! -d "cs1302-demos-generics" ]; then
   rm -rf .git
   rm -f src/cs1302/generics/Container.java
   mkdir bin doc
+  chmod u+x compile.sh
   git init
-  git add README.md .gitignore src 
+  git add README.md .gitignore compile.sh src 
   git commit -m "initial commit"
   echo "subdirectory cs1302-demos-generics successfully created"
   echo "TODO:"
