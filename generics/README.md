@@ -12,9 +12,9 @@
    
 1. Quickly create and compile `Container` class. 
    See [`Container.java`](src/cs1302/generics/Container.java) for hints.
-   To illustrate some errors and warnings:
-   * leave the `next` instance variable as a raw type; and maybe
-   * leave the `getNext()` return type as a raw type. 
+   To illustrate some warnings:
+   * leave the `next` instance variable as a raw type [unchecked conversion warning]; and maybe
+   * leave the `getNext()` return type as a raw type [no warning]. 
    
    This whole process shouldn't be much more than a few replace string commands.
    
