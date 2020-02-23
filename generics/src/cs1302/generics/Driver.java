@@ -19,19 +19,19 @@ public class Driver {
     } // main
 
     /**
-     * Returns the first {@code Container} reference in a list
-     * of {@code Container} objects. The returned list is made
-     * up of four {@code Container} objects, each containing
+     * Returns the first {@code ObjectContainer} reference in a list
+     * of {@code ObjectContainer} objects. The returned list is made
+     * up of four {@code ObjectContainer} objects, each containing
      * a single {@code String}.
      *
      * @return a reference to the head of the {@code Container}
      * list.
      */
-    private static Container<String> createStringList() {
-        Container<String> oc = new Container<String>("Mike");
-        oc = new Container<String>("Steve", oc);
-        oc = new Container<String>("Linda", oc);
-        oc = new Container<String>("Barbara", oc);
+    private static ObjectContainer createStringList() {
+        ObjectContainer oc = new ObjectContainer("Mike");
+        oc = new ObjectContainer("Steve", oc);
+        oc = new ObjectContainer("Linda", oc);
+        oc = new ObjectContainer("Barbara", oc);
         return oc;
     } // createStringList
 
