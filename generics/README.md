@@ -27,6 +27,10 @@
    raw types and the idea that the call to `set` is risky.
 
    ```java
+   /**
+    * Foo the container.
+    * @param rawContainer container to foo
+    */
    public static void foo(Container rawContainer) {
       rawContainer.set("Hello");
    } // foo
