@@ -7,7 +7,6 @@ package cs1302.generics;
  * @author Brad Barnes and Supa' Mike
  * @version 1.0
  */
-
 public class Driver {
 
     /**
