@@ -17,7 +17,7 @@ if [ ! -d "cs1302-demos-generics" ]; then
   echo "subdirectory cs1302-demos-generics successfully created"
   echo "TODO:"
   echo " - create src/cs1302/generics/Container.java"
-  echo " - update src/cs1302/generics/Driver.java
+  echo " - update src/cs1302/generics/Driver.java"
 else
   >&2 echo "subdirectory cs1302-demos-generics already exists"
 fi  
