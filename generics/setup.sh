@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -d "cs1302-demos-generics" ]; then
-  git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-tutorials.git cs1302-demos-generics
+  git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-demos.git cs1302-demos-generics
   cd cs1302-demos-generics
   git checkout master -- generics
   rm -f generics/setup.sh
