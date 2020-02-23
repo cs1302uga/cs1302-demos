@@ -40,6 +40,7 @@ public class ObjectContainer {
     public ObjectContainer(Object contents) {
         set(contents);
     } // ObjectContainer
+    
     /**
      * Returns the value of the {@code contents} property for this container.
      *
