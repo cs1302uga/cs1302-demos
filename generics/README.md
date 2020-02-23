@@ -54,6 +54,7 @@
 1. Declare a raw type `Container` and assign it the `strCont` reference
    created in the previous step. Also, run the get method and ask
    what it returns. Here, we need a cast. Explain why.
+   **Also, draw a picture on the board.**
 
    ```java
    Container raw = strCont;
