@@ -1,5 +1,13 @@
 **Demo notes for Generics Demo**
 
+1. Use the following command to download and execute a shell script that retrieves 
+   the starter code for this tutorial and places it into a subdirectory 
+   called `cs1302-demos-generics`:
+
+   ```
+   $ curl -s -L https://git.io/Jv0QP | bash
+   ```
+   
 1. Create generic driver from `ObjectContainer` making sure to leave
    the `next` instance variable as a raw type. This whole process
    shouldn't be much more than a few replace string commands.
