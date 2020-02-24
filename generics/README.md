@@ -9,8 +9,11 @@
    ```
    $ curl -s -L https://git.io/Jv0QP | bash
    ```
+
+1. Discuss the objectives of the demo and compile the starter code with the script. This is a 
+   good opportunity to review scripting.
    
-1. Quickly create and compile `Container` class. 
+1. Quickly create and compile `Container` class. Need to add it to the script.
    See [`Container.java`](src/cs1302/generics/Container.java) for hints.
    To illustrate some warnings:
    * leave `<T>` on the constructors [<identifier> expected];
@@ -54,7 +57,8 @@
 1. Declare a raw type `Container` and assign it the `strCont` reference
    created in the previous step. Also, run the get method and ask
    what it returns. Here, we need a cast. Explain why.
-   **Also, draw a picture on the board.**
+   **Also, draw a picture on the board.** Show that `Container` is the parent
+   of the parameterized `Container` types.
 
    ```java
    Container raw = strCont;
@@ -100,7 +104,7 @@
 
 1. If we don't fix the `Container` class, we can add a container
    with any type argument as the raw type is the parent to all of
-   the parameterized type. So, the following would compile but not
+   the parameterized types. So, the following would compile but not
    run:
 
    ```java
