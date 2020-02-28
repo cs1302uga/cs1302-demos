@@ -19,7 +19,7 @@ if [ ! -d "cs1302-demos-lambdas" ]; then
   echo " - create src/cs1302/lambdas/Container.java"
   echo " - update src/cs1302/lambdas/Driver.java"
   echo " - compile.sh provided for convenience"
-  echo " - procced per the notes"
+  echo " - proceed per the notes"
 else
   >&2 echo "subdirectory cs1302-demos-lambdas already exists"
 fi
