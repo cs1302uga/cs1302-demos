@@ -7,8 +7,7 @@
    called `cs1302-demos-lambdas`:
 
    ```
-   ** NEED NEW LINK**
-   $ curl -s -L https://git.io/Jv0QP | bash
+   $ curl -s -L https://git.io/JvzDb | bash
    ```
 
 1. Discuss the objectives of the demo and compile the starter code with the script. This is a
@@ -38,8 +37,69 @@
    Driver.<Circle>printArray(circles);
    ```
    
-1. 
+1. Point out the weakness in this approach. Basically, if we want to change how these arrays are sorted, we need
+   to modify the `compareTo` method inside of each class. That's possible, but likely not ideal, for `Circle`. For
+   `String`, it isn't possible. We don't always have access to the source code but we may still want to change
+   how objects are compared.
+   
+1. Create a `NameComparator` class and add it to the compile script. Code:
 
+   ```java
+   package cs1302.lambdas;
+
+   import java.util.Comparator;
+
+   /**
+    * An implementation of Comparator that compares two {@code Circle}
+    * objects by their names.
+    */
+   public class NameComparator implements Comparator<Circle> {
+
+      @Override
+      public int compare(Circle c1, Circle c2) {
+         return c1.getName().compareTo(c2.getName());
+      } // compare
+
+   } // NameComparator
+   ```
+
+1. Call the second `sort` method by adding the following code to the `Driver`:
+
+   ```java
+   NameComparator n = new NameComparator();
+
+   Driver.<Circle>printArray(circles);
+   ArrayUtility.<Circle>sort(circles, n);
+   Driver.<Circle>printArray(circles);
+   ```
+
+1. At this point, we may want to modify the `toString` method in `Circle` or adjust the `circles` array.
+   The answer is the same whether you sort by radius, area, or name with the array we start with.
+   
+1. Discuss how using an anonymous class (below) is an alternative to the above:
+
+   ```java
+   Comparator<Circle> nameComp = new Comparator<Circle>() {
+        @Override
+        public int compare(Circle c1, Circle c2) {
+            return c1.getName().compareTo(c2.getName());
+        } // compare
+
+   };
+   Driver.<Circle>printArray(circles);
+   ArrayUtility.<Circle>sort(circles, nameComp);
+   Driver.<Circle>printArray(circles);
+   ```
+   
+1. Discuss the parts of the above that can be removed. Show them that this leads to a lambda expression.
+
+1. Give a few examples of lambdas. For example, sort the strings by length.
+
+   Name comparator:   
+   ```java
+   Comparator<Circle> nameComp = (c1, c2) -> c1.getName().compareTo(c2.getName());
+   ```
+   
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
