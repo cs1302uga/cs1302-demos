@@ -13,6 +13,32 @@
 
 1. Discuss the objectives of the demo and compile the starter code with the script. This is a
    good opportunity to review scripting.
+   
+1. Pull up the [`ArrayUtility` API](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce15-api/cs1302/util/ArrayUtility.html)
+   and briefly discuss the two method signatures. What can `T` be replaced with in each?
+   
+1. Show the `String` API. Point out that `String` implements `Comparable<String>`. Ask if we can call `sort` 
+   on the `strings` array.
+
+1. Open `Circle.java`. Point out that it implements `Comparable<Circle>`. Ask if we can call `sort` on the 
+   `circles` array.
+   
+1. Point out the generic `printArray` method in the `Driver` class.
+
+1. Write out the following code in `main` discussing each line as we go. Focus on the type argument and the call to
+   a static method using the class name.
+
+   ```java
+   Driver.<String>printArray(strings);
+   ArrayUtility.<String>sort(strings);
+   Driver.<String>printArray(strings);
+
+   Driver.<Circle>printArray(circles);
+   ArrayUtility.<Circle>sort(circles);
+   Driver.<Circle>printArray(circles);
+   ```
+   
+1. 
 
 <hr/>
 
