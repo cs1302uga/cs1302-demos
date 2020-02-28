@@ -7,7 +7,7 @@ package cs1302.lambdas;
  * diameter. Half of this length is called the radius, denoting the distance from the focul
  * point to any point on the curve.
  */
-public class Circle extends Ellipse {
+public class Circle extends Ellipse implements Comparable<Circle> {
 
     /**
      * Constructs a {@link Circle} object with the specified radius length.
@@ -63,4 +63,8 @@ public class Circle extends Ellipse {
         return getSemiMajorAxisLength();
     } // getRadius
 
+    @Override
+    public int compareTo(Circle o) {
+        return Double.compare(this.getRadius(), o.getRadius());
+    } // compareTo
 } // Circle
