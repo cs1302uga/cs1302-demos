@@ -1,5 +1,20 @@
 # Generics Demo
 
+## Optional
+
+1. I started out with the `Pair` class from Quiz 13. Discussed basics and terminology first.
+
+1. Looked at the following example code with `Pair` and drew out the diagram with the object and variable types:
+   
+   ```java
+   Pair p = new Pair("Sally", "Joe");
+   Pair<String, Double> p = new Pair("Sally", "Joe");
+   Double d = p.getSecond();
+   ```
+
+1. Tried to compile other examples from Quiz 13 and discussed what we were seeing. Found this to be a good lead-in
+   to the discussion with the `Container` class.
+
 ## Notes
 
 1. Use the following command to download and execute a shell script that retrieves 
